@@ -1,0 +1,125 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+    background-color: rgb(255, 255, 238);
+}
+
+.headline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    width: 50%;
+    height: 628px; 
+    border-radius: 30px;
+    background-blend-mode: lighten ;
+}
+
+.rice-heading {
+    width: 99.5%;
+    border-radius: 30px;
+    border: 3px solid rgb(250, 152, 152);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+}
+
+h1 {
+    font-size: 80px;
+    margin: 20px;
+}
+
+h2 {
+    font-size: 40px;
+    text-decoration: underline;
+}
+.heading {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    font-size: 80px;
+    color: rgb(238, 255, 0);
+    text-shadow: 2px 2px 5px black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.meal-time {
+   width: 90%; 
+   height: 500px;
+   display: flex;
+   flex: 0, 1, auto;
+   column-gap: 100px;
+}
+
+.card {
+    color: black;
+    background-color: #f3c181;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+    width: 33%;
+    height: 500px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.8);
+}
+
+.meal-fotos {
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.9);
+    margin-top: 20px;
+    width: 90%;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1150px) {
+
+    h1 {
+        font-size: 70px;
+    }
+    .card {
+        height: 400px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    h1 {
+        font-size: 60px;
+    }
+    .card {
+        width: 40%;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .meal-time {
+        flex-wrap: wrap;
+        row-gap: 100px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    h1 {
+        font-size: 40px;
+    }
+    .card {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .rice-heading {
+        display: none;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
